@@ -16,8 +16,12 @@ body {
 }
 
 .cont {
-  max-width: 1500px;
+  max-width: 1400px;
   margin: auto;
+}
+
+.clear {
+  clear: both;
 }
 
 :root {
@@ -61,6 +65,7 @@ body {
   transition: all 0.5s ease;
   line-height: 50px;
   display: none;
+  z-index: 999;
 }
 
 #img_menu {
@@ -128,9 +133,38 @@ body {
 
 /* header */
 
+.headerMain {
+  width: 80%;
+  display: flex;
+  justify-items: first baseline;
+  align-items: flex-end;
+}
+
 .hello-user {
+  width: 50%;
   padding-top: 4em;
   padding-left: 1.5em;
+}
+
+.pesquisa {
+  text-align: right;
+  width: 45%;
+  position: relative;
+}
+
+.pesquisa i {
+  position: absolute;
+  z-index: 998;
+  top: 7px;
+  padding-left: 6px;
+}
+
+.pesquisa input {
+  z-index: 997;
+  position: relative;
+  right: 0;
+  padding: 5px 5px 5px 30px;
+  border-radius: 15px;
 }
 
 .materies {
@@ -138,6 +172,7 @@ body {
 }
 
 .materies-wrap {
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -249,7 +284,6 @@ footer {
   font-size: 30px;
 }
 
-
 .footer-maps .mapa iframe {
   width: 100%;
 }
@@ -302,6 +336,25 @@ footer {
   }
 
   /* main */
+
+  .logo-footer {
+    width: 100%;
+    padding-top: 20px;
+    padding-left: 1em;
+  }
+
+  .footer-singleExe {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    padding-top: 20px;
+  }
+
+  .footer-maps {
+    width: 90%;
+    margin: auto;
+  }
+  /* footer */
 }
 
 @media screen and (max-width: 480px) {
@@ -352,6 +405,30 @@ footer {
 
   /* header */
 
+  .headerMain {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .hello-user {
+    text-align: center;
+    width: 100%;
+    padding-bottom: 20px;
+    padding-left: 0px;
+  }
+
+  .pesquisa {
+    width: 100%;
+    text-align: center;
+  }
+
+  .pesquisa input {
+    width: 70%;
+  }
+
   .materies-single {
     height: 400px;
   }
@@ -370,6 +447,8 @@ footer {
   }
 
   /* main */
+
+  /* footer */
 }
 
 @media screen and (max-width: 303px) {
