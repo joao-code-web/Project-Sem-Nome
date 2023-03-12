@@ -257,13 +257,29 @@ footer {
 }
 
 .footer-singleExe {
-  width: 30%;
+  width: 35%;
   height: auto;
   padding-top: 20px;
 }
 
-.footer-singleExe ul {
-  padding-top: 10px;
+.footer-singleExe h1 {
+  padding-left: 20px;
+}
+
+.footer-singleExe nav {
+  display: flex;
+  padding-left: 20px;
+}
+
+.footer-singleExe ul.math-footer {
+  width: 50%;
+  padding-top: 20px;
+}
+
+.footer-singleExe ul.portu-footer {
+  width: 50%;
+  padding-top: 20px;
+  padding-left: 10px;
 }
 
 .footer-singleExe ul li {
@@ -273,10 +289,13 @@ footer {
 .footer-singleExe ul li a {
   color: white;
 }
+.footer-singleExe ul li a:hover {
+  border-bottom: 1px solid black;
+}
 
 .footer-maps {
   width: 30%;
-  padding-top: 20px;
+  padding: 10px;
 }
 
 .footer-maps h1 {
@@ -313,7 +332,7 @@ footer {
   }
 }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 800px) {
   .ul_principal {
     display: none;
   }
@@ -350,8 +369,20 @@ footer {
     padding-top: 20px;
   }
 
+  .footer-singleExe h1 {
+    padding: 0px;
+  }
+
+  .footer-singleExe ul {
+    text-align: center;
+  }
+
+  .footer-singleExe nav {
+    padding: 0px;
+  }
+
   .footer-maps {
-    width: 90%;
+    width: 95%;
     margin: auto;
   }
   /* footer */
