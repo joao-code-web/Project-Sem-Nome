@@ -57,7 +57,7 @@ const verificLogin = () => {
     passSignIn.value.trim() === localStorage.passUser
   ) {
   
-    buttonLink.href = `https://joao-code-web.github.io/projeto-sem-nome/home.html`;
+    buttonLink.href = `https://joao-code-web.github.io/Project-Sem-Nome/home.html`;
   } else {
     buttonLink.href = `#`;
   }
