@@ -167,72 +167,6 @@ body {
   border-radius: 15px;
 }
 
-.materies {
-  width: 100%;
-}
-
-.materies-wrap {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.materies-single {
-  display: flex;
-  flex-direction: column;
-  width: 24%;
-  height: 350px;
-  margin: 30px;
-  box-shadow: 25px 30px 25px -11px rgba(0, 0, 0, 0.35);
-  border-radius: 45px;
-}
-
-.materies-single .photo-materia {
-  width: 100%;
-  height: 80%;
-  border-radius: 45px 45px 0px 0px;
-}
-
-.materies-single .photo-materia img {
-  width: 100%;
-  height: 100%;
-  border-radius: 45px 45px 0px 0px;
-}
-
-.materies-single .description-materia {
-  width: 100%;
-  height: 20%;
-  display: flex;
-  justify-content: space-between;
-  background-color: var(--color--1);
-  margin: auto;
-  padding-left: 10px;
-  text-align: left;
-  color: white;
-  border-radius: 0px 0px 45px 45px;
-}
-
-.materies-single .description-materia .tittle {
-  margin: auto;
-}
-
-.materies-single .description-materia .tittle h1 {
-  font-weight: 900;
-  font-size: 30px;
-}
-
-.materies-single .description-materia .icon-materia {
-  margin: auto;
-}
-
-.materies-single .description-materia .icon-materia i {
-  font-size: 30px;
-}
-
-/* main */
-
 footer {
   width: 100%;
   background-color: var(--color--1);
@@ -325,12 +259,6 @@ footer {
 
 /* footer */
 
-@media screen and (max-width: 1260px) {
-  /* main */
-  .materies-single {
-    width: 40%;
-  }
-}
 
 @media screen and (max-width: 800px) {
   .ul_principal {
@@ -346,15 +274,6 @@ footer {
   }
 
   /* header */
-  .materies-single {
-    width: 80%;
-  }
-
-  .materies-single .description-materia p {
-    padding-top: 15px;
-  }
-
-  /* main */
 
   .logo-footer {
     width: 100%;
@@ -458,23 +377,6 @@ footer {
 
   .pesquisa input {
     width: 70%;
-  }
-
-  .materies-single {
-    height: 400px;
-  }
-
-  .materies-single .description-materia {
-    flex-direction: column;
-    padding: 10px;
-  }
-
-  .materies-single .description-materia .tittle h1 {
-    font-size: 25px;
-  }
-
-  .materies-single .description-materia .icon-materia i {
-    font-size: 20px;
   }
 
   /* main */

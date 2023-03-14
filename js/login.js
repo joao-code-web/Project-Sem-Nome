@@ -10,10 +10,10 @@ const buttonPrev = document.querySelector(".bols i.prev");
 const slideBoxMen = document.querySelector(".bols #man");
 const slideBoxWoman = document.querySelector(".bols #woman");
 const imgUser = document.querySelector(".img-user");
+const imgUserIn = document.querySelector(".card .front .img-user img");
 const buttonSingUp = document.querySelector("button#flipFront");
 const buttonLogin = document.querySelector("button#loginUser");
-const buttonLink = document.querySelector("button a");
-
+const buttonLink = document.querySelector(".card .front form a");
 // // vars
 var currentSlide = 1;
 const isValueNameUp = nameSignUp.value.trim() === "";
@@ -54,14 +54,16 @@ const verificInputSignIn = () => {
 const verificLogin = () => {
   if (
     nameSignIn.value.trim() === localStorage.nameUser &&
-    passSignIn.value.trim() === localStorage.passUser
+    passSignIn.value.trim() === localStorage.passUser 
   ) {
-  
     buttonLink.href = `https://joao-code-web.github.io/Project-Sem-Nome/home.html`;
   } else {
+    nameSignIn.style.border = `2px solid #f50303`;
+    passSignIn.style.border = `2px solid #f50303`;
     buttonLink.href = `#`;
   }
 };
+
 //responsavel por colocar a foto salva pelo usuario
 const autoPhoto = () => {
   if (localStorage.userImg == undefined) {
