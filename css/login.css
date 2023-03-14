@@ -196,6 +196,7 @@ body {
     margin-bottom: 10px;
     color: white;
     font-size: 20px;
+    cursor: pointer;
 }
 
 .card .back span {
