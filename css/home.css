@@ -16,7 +16,7 @@ body {
 }
 
 .cont {
-  max-width: 1400px;
+  max-width: 1200px;
   margin: auto;
 }
 
@@ -134,7 +134,7 @@ body {
 /* header */
 
 .headerMain {
-  width: 80%;
+  width: 70%;
   display: flex;
   justify-items: first baseline;
   align-items: flex-end;
@@ -165,6 +165,31 @@ body {
   right: 0;
   padding: 5px 5px 5px 30px;
   border-radius: 15px;
+}
+
+.materies {
+  max-width: 1300px;
+  margin: 50px auto;
+}
+
+.materies-wraper {
+  width: 70%;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+.materias-single {
+  width: 21%;
+  height: auto;
+  padding: 20px;
+  background-color: var(--color--1);
+  margin: 1.3em 5px;
+  border-radius: 30px;
+  box-shadow: 4px 10px 10px 1px rgba(0, 0, 0, 0.829);
 }
 
 footer {
@@ -259,7 +284,6 @@ footer {
 
 /* footer */
 
-
 @media screen and (max-width: 800px) {
   .ul_principal {
     display: none;
@@ -274,6 +298,33 @@ footer {
   }
 
   /* header */
+
+  .materies {
+    max-width: 1300px;
+    margin: 50px auto;
+  }
+
+  .materies-wraper {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+  }
+
+  .materias-single {
+    width: 25%;
+    height: auto;
+    padding: 20px;
+    background-color: var(--color--1);
+    margin: 10px;
+    border-radius: 30px;
+    box-shadow: 4px 10px 10px 1px rgba(0, 0, 0, 0.829);
+  }
+
+  /* main */
 
   .logo-footer {
     width: 100%;
@@ -384,7 +435,7 @@ footer {
   /* footer */
 }
 
-@media screen and (max-width: 303px) {
+@media screen and (max-width: 353px) {
   .ul_principal {
     display: none;
   }
@@ -396,4 +447,31 @@ footer {
   #logo {
     font-size: 13px;
   }
+
+  .materies {
+    max-width: 100%;
+    margin: 50px auto;
+  }
+
+  .materies-wraper {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+  }
+
+  .materias-single {
+    width: 70%;
+    height: 100px;
+    padding: 30px 0px;
+    background-color: var(--color--1);
+    margin: 20px auto;
+    border-radius: 30px;
+    box-shadow: 4px 10px 10px 1px rgba(0, 0, 0, 0.829);
+  }
+
+  /* ma */
 }
