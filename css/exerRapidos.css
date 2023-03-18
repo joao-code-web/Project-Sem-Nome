@@ -133,21 +133,77 @@ body {
 
 /* header */
 
-.materias-exerRapidos {
+section.exerRapidos .cont {
+  max-width: 1500px;
+}
+
+.exerRapidos {
     width: 100%;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
-.exatas {
-    width: 50%;
-    height: 50px;
-    background-color: rebeccapurple;
+.search-quiz {
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  position: relative;
+  margin: 2em auto;
 }
 
-.humanas {
-    width: 50%;
-    height: 50px;
-    background-color: rebeccapurple;
+.search-quiz input {
+  width: 90%;
+  padding: 1.5em;
+  border-radius: 25px;
+  border: 0px;
+  outline: none;
+  background-color: var(--color--4);
+}
+
+.search-quiz i {
+  width: 60px;
+  padding: 1.25em;
+  border-radius: 0px 40px 40px 0px;
+  background-color: var(--color--5);
+  position: absolute;
+  right: 65px;
+  bottom: 10px;
+}
+
+.quiz-wraper {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.quiz-exer {
+  width: 32%;
+  margin-bottom: 15px;
+  padding: 10px;
+  background-color: var(--color--3);
+  border-radius: 15px;
+}
+
+.tittle-quiz {  
+  padding: 10px;
+  color: white;
+}
+
+.tittle-quiz h1 {
+  width: 100%;
+}
+
+.description-quiz {
+  width: 95%;
+  border-radius: 10px;
+  padding: 5px;
+  margin: auto;
+  background-color: white;
 }
 
 /* main */
