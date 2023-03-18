@@ -147,7 +147,7 @@ section.exerRapidos .cont {
 }
 
 .search-quiz {
-  width: 100%;
+  width: 90%;
   padding: 10px;
   text-align: center;
   position: relative;
@@ -155,7 +155,7 @@ section.exerRapidos .cont {
 }
 
 .search-quiz input {
-  width: 90%;
+  width: 100%;
   padding: 1.5em;
   border-radius: 25px;
   border: 0px;
@@ -169,7 +169,7 @@ section.exerRapidos .cont {
   border-radius: 0px 40px 40px 0px;
   background-color: var(--color--5);
   position: absolute;
-  right: 65px;
+  right: 0px;
   bottom: 10px;
 }
 
@@ -207,3 +207,104 @@ section.exerRapidos .cont {
 }
 
 /* main */
+
+@media screen and (max-width: 800px) {
+  .ul_principal {
+    display: none;
+  }
+
+  .btn_open {
+    display: block;
+  }
+
+  .menu_pc {
+    justify-content: center;
+  }
+
+  /* header */
+
+  .quiz-exer {
+    width: 45%;
+    margin: 0.5em;
+  }  
+
+  /* main */
+}
+
+@media screen and (max-width: 480px) {
+  .menu_cell {
+    position: absolute;
+    left: 0px;
+
+    width: 100px;
+    height: 90%;
+    background: rgb(11, 37, 69);
+    background: linear-gradient(
+      180deg,
+      rgba(11, 37, 69, 1) 0%,
+      rgba(27, 70, 159, 1) 36%,
+      rgba(0, 174, 255, 1) 100%
+    );
+    transition: all 0.5s ease;
+    line-height: 50px;
+  }
+
+  .a_cell {
+    color: #eef4ed;
+    display: block;
+    background-color: transparent;
+    line-height: 45px;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    font-size: 12px;
+    transition: 0.4s;
+    padding-left: 12px;
+    box-sizing: border-box;
+  }
+
+  .a_cell:hover {
+    color: #eef4ed;
+    display: block;
+    background-color: #1186bc;
+    line-height: 45px;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    font-size: 14px;
+    transition: 0.4s;
+    padding-left: 15px;
+    box-sizing: border-box;
+  }
+
+  /* header */
+
+  .quiz-exer {
+    width: 80%;
+    margin: 1em auto;
+  }  
+
+  /* main */
+  
+}
+
+@media screen and (max-width: 353px) {
+  .ul_principal {
+    display: none;
+  }
+
+  .btn_open {
+    display: block;
+  }
+
+  #logo {
+    font-size: 13px;
+  }
+
+  
+  .quiz-exer {
+    width: 90%;
+  }  
+
+  /* main */
+}
