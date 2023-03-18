@@ -1,0 +1,153 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.cont {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.clear {
+  clear: both;
+}
+
+:root {
+  --color--1: #134074;
+  --color--2: #13315c;
+  --color--3: #0b2545;
+  --color--4: #8da9c4;
+  --color--5: #eef4ed;
+}
+
+#logo {
+  color: #eef4ed;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin: 20px;
+}
+
+.menu_pc {
+  width: 100%;
+  background-color: var(--color--1);
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 20px 1px 20px rgba(0, 0, 0, 0.507);
+}
+
+.li_padrao {
+  float: left;
+  margin: 10px;
+}
+
+.menu_cell {
+  position: absolute;
+  left: 0px;
+  /*top:0px;*/
+  width: 130px;
+  height: 100%;
+  background-color: var(--color--1);
+  transition: all 0.5s ease;
+  line-height: 50px;
+  display: none;
+  z-index: 999;
+}
+
+#img_menu {
+  transition: 0.4s;
+}
+
+.open {
+  display: block;
+}
+
+.btn_open {
+  display: none;
+  border: none;
+  cursor: pointer;
+  margin: 15px;
+  padding: 5px;
+  background-color: transparent;
+}
+
+.btn_open > img {
+  display: block;
+  width: 20px;
+}
+
+.a_cell {
+  color: #eef4ed;
+  display: block;
+  background-color: transparent;
+  line-height: 45px;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  font-size: 18px;
+  transition: 0.4s;
+  padding-left: 15px;
+  box-sizing: border-box;
+}
+
+.a_cell:hover {
+  color: #eef4ed;
+  display: block;
+  background-color: #005d88;
+  line-height: 45px;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  font-size: 18px;
+  transition: 0.4s;
+  padding-left: 20px;
+  box-sizing: border-box;
+}
+
+.a_padrao {
+  padding: 10px 15px 10px 15px;
+  border-radius: 40px;
+  text-align: center;
+  color: #eef4ed;
+  transition: 0.4s ease-in-out;
+}
+
+.a_padrao:hover {
+  background-color: var(--color--5);
+  color: var(--color--3);
+}
+
+/* header */
+
+.materias-exerRapidos {
+    width: 100%;
+    display: flex;
+}
+
+.exatas {
+    width: 50%;
+    height: 50px;
+    background-color: rebeccapurple;
+}
+
+.humanas {
+    width: 50%;
+    height: 50px;
+    background-color: rebeccapurple;
+}
+
+/* main */

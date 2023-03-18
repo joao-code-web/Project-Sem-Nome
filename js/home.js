@@ -4,9 +4,8 @@ const btn_open = document.querySelector(".btn_open");
 const img_menu = document.querySelector("#img_menu");
 // menuMobile
 const helloUserTittle = document.querySelector("h1#helloName");
+const addPhoto = document.querySelector(".photo-user");
 // functions
-
-console.log(helloUserTittle);
 const mobileMenu = () => {
   if (menu_cell.classList.contains("open")) {
     menu_cell.classList.remove("open");
@@ -21,7 +20,7 @@ const helloUSer = () => {
   if (localStorage.nameUser === undefined) {
     helloUserTittle.innerHTML = `Olá`;
   } else {
-    helloUserTittle.innerHTML = `Olá, ${localStorage.nameUser}:)`;
+    helloUserTittle.innerHTML = `Olá, ${localStorage.nameUser}`;
   }
 };
 
@@ -29,5 +28,13 @@ const botao = () => {
   mobileMenu();
 };
 
+const verificAutoPhoto = () => {
+  if(localStorage.userImg != undefined) {
+    addPhoto.innerHTML = localStorage.userImg;
+  } 
+}
+
 btn_open.addEventListener("click", botao);
 helloUSer();
+
+verificAutoPhoto();
