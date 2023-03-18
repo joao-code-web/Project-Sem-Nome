@@ -280,7 +280,7 @@ section.exerRapidos .cont {
   /* header */
 
   .quiz-exer {
-    width: 80%;
+    width: 90%;
     margin: 1em auto;
   }  
 
@@ -300,11 +300,4 @@ section.exerRapidos .cont {
   #logo {
     font-size: 13px;
   }
-
-  
-  .quiz-exer {
-    width: 90%;
-  }  
-
-  /* main */
 }
