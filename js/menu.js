@@ -1,15 +1,13 @@
 const buttonI = window.document.querySelector(".list-mobile i");
-const navMoba = window.document.getElementById("mobile");
+const desktop = document.querySelector("nav.desktop");
 
 const menuFunction = () => {
-  if (navMoba.style.opacity === "0") {
-    navMoba.style.opacity = "1";
-    buttonI.style.transform = "rotate(510deg)";
-    buttonI.style.fontSize = "45px";
+  if (desktop.style.display == "none") {
+    desktop.style.display = "block"
+    desktop.style.opacity = "1"
+
   } else {
-    navMoba.style.opacity = "0";
-    buttonI.style.transform = "rotate(0deg)";
-    buttonI.style.fontSize = "30px";
+    desktop.style.display = "none"
   }
 };
 
