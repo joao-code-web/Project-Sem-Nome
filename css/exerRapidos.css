@@ -209,16 +209,29 @@ footer {
 
 .logo-footer {
   width: 30%;
-  padding-top: 20px;
+  padding: 1em;
+  text-align: center;
 }
 
 .logo-img-footer {
   width: 100%;
 }
 
-.logo-footer p {
-  padding-top: 20px;
-  line-height: 25px;
+.icons-materias-footer {
+  margin-top: 2em;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.icons-materias-footer i {
+  padding: 0.9em;
+  font-size: 30px;
+}
+
+.icons-materias-footer i:hover {
+  background-color: var(--color--3);
 }
 
 .footer-singleExe {
