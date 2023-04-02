@@ -1,8 +1,6 @@
 * {
   padding: 0;
   margin: 0;
-  list-style: none;
-  text-decoration: none;
   box-sizing: border-box;
 }
 
@@ -31,12 +29,6 @@ body {
 
 .clear {
   clear: both;
-}
-
-header {
-  width: 100%;
-  padding: 10px;
-  background-color: var(--color--1);
 }
 
 header {
@@ -81,7 +73,6 @@ header {
 .logo h1 {
   display: inline-block;
 }
-
 .list-materias {
   transition: 1s;
 }
@@ -121,86 +112,77 @@ nav.desktop ul li a:hover {
   color: var(--color--4);
 }
 
-/* header */
-
-section.exerRapidos .cont {
-  max-width: 1500px;
+/* Estilos para o contêiner principal */
+main.cont {
+  background-color: #0b2545;
+  padding: 2em;
+  margin: 3em auto;
+  color: white;
+  border-radius: 50px;
 }
 
-.exerRapidos {
+/* Estilos para a seção do quiz */
+.quiz {
   width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
+  gap: 2em;
 }
 
-.exerRapidos a {
-  color: black;
+/* Estilos para a contagem de perguntas */
+.spnQtd {
+  text-align: end;
+  font-size: 20px;
 }
 
-.search-quiz {
-  width: 90%;
-  padding: 10px;
+/* Estilos para a pergunta */
+span.question {
+  width: 100%;
+  padding: 0.5em;
   text-align: center;
-  position: relative;
-  margin: 2em auto;
+  font-size: 30px;
+  overflow: auto;
 }
 
-.search-quiz input {
-  width: 100%;
-  padding: 1.5em;
-  border-radius: 25px;
-  border: 0px;
-  outline: none;
-  background-color: var(--color--4);
-}
-
-.search-quiz i {
-  width: 60px;
-  padding: 1.25em;
-  border-radius: 0px 40px 40px 0px;
-  background-color: var(--color--5);
-  position: absolute;
-  right: 0px;
-  bottom: 10px;
-}
-
-.quiz-wraper {
+/* Estilos para as respostas */
+.answers {
   display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+/* Estilos para os botões de resposta */
+button {
   width: 100%;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-.quiz-exer {
-  width: 32%;
-  margin-bottom: 15px;
-  padding: 10px;
-  background-color: var(--color--3);
-  border-radius: 15px;
-}
-
-.tittle-quiz {
-  padding: 10px;
+  text-align: justify;
+  overflow: auto;
+  padding: 2em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #008ccc;
   color: white;
+  border-radius: 20px;
 }
 
-.tittle-quiz h1 {
-  width: 100%;
+/* Estilos para a seção de finalização */
+.finish {
+  padding-top: 4em;
+  display: none;
+  text-align: center;
+  flex-direction: column;
+  gap: 4em;
 }
 
-.description-quiz {
-  width: 95%;
-  border-radius: 10px;
-  padding: 5px;
-  margin: auto;
-  background-color: white;
+/* Estilos para a mensagem de finalização */
+.finish span {
+  font-size: 30px;
 }
 
-/* main */
+/* Estilos para o botão de finalização */
+.finish button {
+  text-align: center;
+}
 
 footer {
   width: 100%;
@@ -309,6 +291,7 @@ footer {
 
 @media screen and (max-width: 800px) {
   .logo {
+    float: none;
     text-align: center;
   }
 
@@ -323,9 +306,40 @@ footer {
 
   /* header */
 
-  .quiz-exer {
-    width: 45%;
-    margin: 0.5em;
+  .headerMain {
+    width: 100%;
+  }
+
+  .hello-user {
+    width: 100%;
+    margin-top: 4em;
+    margin-left: 2em;
+    display: flex;
+  }
+
+  .materies {
+    max-width: 1300px;
+    margin: 50px auto;
+  }
+
+  .materies-wraper {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+  }
+
+  .materias-single {
+    width: 25%;
+    height: auto;
+    padding: 20px;
+    background-color: var(--color--1);
+    margin: 10px;
+    border-radius: 30px;
+    box-shadow: 4px 10px 10px 1px rgba(0, 0, 0, 0.829);
   }
 
   /* main */
@@ -370,14 +384,14 @@ footer {
     text-align: center;
     border-radius: 0px 0px 50px 50px;
   }
-  
+
   nav.desktop ul {
     list-style-type: none;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
   }
-  
+
   nav.desktop ul li {
     width: 100%;
     padding: 1em;
@@ -386,12 +400,75 @@ footer {
     border: 0;
     font-size: 25px;
   }
+
   /* header */
 
-  .quiz-exer {
-    width: 90%;
-    margin: 1em auto;
+  .headerMain {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .hello-user {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 40px auto;
+  }
+
+  .pesquisa {
+    width: 100%;
+    text-align: center;
+  }
+
+  .pesquisa input {
+    width: 70%;
   }
 
   /* main */
+}
+
+@media screen and (max-width: 353px) {
+  .materies {
+    max-width: 100%;
+    margin: 50px auto;
+  }
+
+  .materies-wraper {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+  }
+
+  .materias-single {
+    width: 70%;
+    height: 100px;
+    padding: 30px 0px;
+    background-color: var(--color--1);
+    margin: 20px auto;
+    border-radius: 30px;
+    box-shadow: 4px 10px 10px 1px rgba(0, 0, 0, 0.829);
+  }
+
+  /* ma */
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
 }
