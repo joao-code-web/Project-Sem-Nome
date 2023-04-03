@@ -1,8 +1,9 @@
 export default [
   {
-    question: "Quanto é 1 + 2?ksalksalksalksalksaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaawbndiuwbvdfuywbQuanto é 1 + 2?ksalksalksalksalksaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaawbndiuwbvdfuywbdiubnwdjkw djowndjwbdiuyvwduycvwdtQuanto é 1 + 2?ksalksalksalksalksaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaawbndiuwbvdfuywbdiubnwdjkw djowndjwbdiuyvwduycvwdtQuanto é 1 + 2?ksalksalksalksalksaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaawbndiuwbvdfuywbdiubnwdjkw djowndjwbdiuyvwduycvwdtQuanto é 1 + 2?ksalksalksalksalksaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaawbndiuwbvdfuywbdiubnwdjkw djowndjwbdiuyvwduycvwdtdiubnwdjkw djowndjwbdiuyvwduycvwdtuyb",
+    question: "Quanto é 1 + 2",
+    img: `<img src="../img/usersImg/homen1.png" alt="">`,
     answers: [
-      { option: "3d3iowdhiu3edfuedfheiubnfQuanto é 1 + 2?ksalksalksalksalksaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaawbndiuwbvdfuywbdiubnwdjkw djowndjwbdiuyvwduycvwdtQuanto é 1 + 2?ksalksalksalksalksaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaawbndiuwbvdfuywbdiubnwdjkw djowndjwbdiuyvwduycvwdt", correct: true },
+      { option: "3", correct: true },
       { option: "2", correct: false },
       { option: "4", correct: false },
       { option: "9", correct: false },
@@ -19,6 +20,7 @@ export default [
   },
   {
     question: "Quanto é 10 x 8?",
+    img: `<img src="../img/usersImg/homen3.png" alt="">`,
     answers: [
       { option: "800", correct: false },
       { option: "90", correct: false },
@@ -37,6 +39,7 @@ export default [
   },
   {
     question: "Quanto é 1 x 7?",
+    img: `<img src="../img/usersImg/homen3.png" alt="">`,
     answers: [
       { option: "7", correct: true },
       { option: "170", correct: false },
@@ -55,6 +58,7 @@ export default [
   },
   {
     question: "Quanto é 1 x 0?",
+    img: `<img src="../img/usersImg/homen3.png" alt="">`,
     answers: [
       { option: "0", correct: true },
       { option: "170", correct: false },
@@ -73,6 +77,7 @@ export default [
   },
   {
     question: "Quanto é 1 x 0?",
+    img: `<img src="../img/usersImg/homen3.png" alt="">`,
     answers: [
       { option: "0", correct: true },
       { option: "170", correct: false },

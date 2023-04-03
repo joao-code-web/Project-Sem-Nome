@@ -1,4 +1,4 @@
-import EnemFisicaQuestions from "../quizQuestions/EnemFisicaQuestions.js";
+import matematica1YQuestions from "../quizQuestions/matematica1YQuestions.js";
 
 const question = document.querySelector(".question");
 const answers = document.querySelector(".answers");
@@ -9,7 +9,7 @@ const contentFinish = document.querySelector(".finish");
 const btnRestart = document.querySelector(".finish button");
 const imgQuiz = document.querySelector(".imgQuiz");
 
-let questions = EnemFisicaQuestions;
+let questions = matematica1YQuestions;
 let currentIndex = 0;
 let questionsCorrect = 0;
 

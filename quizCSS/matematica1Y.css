@@ -118,7 +118,6 @@ main.cont {
   margin: 3em auto;
   color: white;
   border-radius: 50px;
-  transition: all 1s;
 }
 
 .quiz {
@@ -130,7 +129,7 @@ main.cont {
 
 .spnQtd {
   text-align: end;
-  font-size: 25px;
+  font-size: 20px;
 }
 
 .imgQuiz {

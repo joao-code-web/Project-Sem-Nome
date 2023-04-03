@@ -1,22 +1,23 @@
-// DOM
-const helloUserTittle = document.querySelector("h1#helloName");
+const helloUserTitle = document.querySelector("h1#helloName");
 const addPhoto = document.querySelector(".photo-user");
 
-// functions
-const helloUSer = () => {
-  if (localStorage.nameUser === undefined) {
-    helloUserTittle.innerHTML = `Olá`;
-  } else {
-    helloUserTittle.innerHTML = `Olá, ${localStorage.nameUser}`;
-  }
+// Funções de Utilidade
+const getLocalStorageItem = (key) => {
+  return localStorage.getItem(key) || "";
+};
+
+// Funções
+const helloUser = () => {
+  const nameUser = getLocalStorageItem("nameUser");
+  helloUserTitle.innerHTML = nameUser ? `Olá, ${nameUser}` : "Olá";
 };
 
 const verificAutoPhoto = () => {
-  if(localStorage.userImg != undefined) {
-    addPhoto.innerHTML = localStorage.userImg;
-  } 
-}
+  const userImg = getLocalStorageItem("userImg");
+  if (userImg) {
+    addPhoto.innerHTML = userImg;
+  }
+};
 
-helloUSer();
-
+helloUser();
 verificAutoPhoto();
