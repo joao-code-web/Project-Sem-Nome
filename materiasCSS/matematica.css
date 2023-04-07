@@ -17,10 +17,10 @@ body {
 
 :root {
   --color--1: #134074;
-  --color--2: #13315C;
-  --color--3: #0B2545;
-  --color--4: #8DA9C4;
-  --color--5: #EEF4ED;
+  --color--2: #13315c;
+  --color--3: #0b2545;
+  --color--4: #8da9c4;
+  --color--5: #eef4ed;
 }
 
 .cont {
@@ -37,22 +37,18 @@ header {
   width: 100%;
   padding: 10px;
   background-color: var(--color--1);
+  z-index: 988;
 }
 
 .list-mobile {
   width: 100px;
   height: 100px;
   position: absolute;
-  right: 0;
-  top: 0;
+  top: 15px;
+  display: none;
 }
 
 .list-mobile i {
-  z-index: 1;
-  transition: 1s;
-  padding: 10px;
-  display: none;
-  float: right;
   position: relative;
   text-align: center;
   top: -2px;
@@ -61,32 +57,51 @@ header {
 }
 
 .logo {
+  width: 200px;
+  height: 100px;
   color: white;
-  float: left;
+  margin: auto;
+  text-align: center;
+  overflow: hidden;
 }
 
 .logo img {
+  position: relative;
+  top: 60px;
   width: 100%;
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
+  height: 100%;
+  transition: transform 1s ease;
 }
 
-.logo h1 {
-  display: inline-block;
+.logo a {
+  color: white;
+}
+
+.list-materias {
+  width: 100%;
+  transition: 1s;
 }
 
 nav.desktop {
-  float: right;
+  width: 100%;
+  background-color: var(--color--1);
+  padding: 1em;
+  margin: auto;
+  text-align: center;
+  border-radius: 0px 0px 50px 50px;
 }
 
 nav.desktop ul {
   list-style-type: none;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 0.5em;
 }
 
 nav.desktop ul li {
-  float: left;
-  margin: 0.5em;
+  padding: 0.9em;
   transition: 0.5s;
   outline: none;
   border: 0;
@@ -99,36 +114,7 @@ nav.desktop ul li a {
 }
 
 nav.desktop ul li a:hover {
-  border-bottom: 2px solid black;
-}
-
-nav.mobile {
-  opacity: 0;
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 250px;
-  height: 100vh;
-  z-index: 999;
-  background-color: var(--color--1);
-}
-
-nav.mobile ul {
-  list-style-type: none;
-}
-
-nav.mobile ul li {
-  padding: 5px 20px;
-  font-size: 20px;
-}
-
-nav.mobile ul li a {
-  color: rgb(255, 255, 255);
-  text-decoration: none;
-}
-
-nav.mobile ul li a:hover {
-  border-bottom: 2px solid black;
+  color: var(--color--4);
 }
 
 .years-wraper {
@@ -151,7 +137,7 @@ nav.mobile ul li a:hover {
   font-weight: 700;
 }
 
-.years-single nav.list ul li{
+.years-single nav.list ul li {
   padding-top: 10px;
   font-size: 20px;
 }
@@ -249,18 +235,20 @@ footer {
 /* footer */
 
 @media screen and (max-width: 800px) {
-  .logo {
-    float: none;
-    text-align: center;
+  .list-mobile {
+    top: 50px;
+    left: 120px;
+    display: block;
   }
 
   nav.desktop {
+    opacity: 0;
     display: none;
   }
 
-  .list-mobile i {
-    display: block;
-    display: inline-block;
+  .logo img  {
+    top: 0px;
+    margin: 0px 20px;
   }
 
   /* header */
@@ -311,4 +299,3 @@ footer {
     top: 58px;
   }
 }
-
