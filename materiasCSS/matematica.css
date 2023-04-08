@@ -129,17 +129,35 @@ nav.desktop ul li a:hover {
   width: 45%;
   border: 1px solid black;
   padding: 2em;
-  border-radius: 60px;
+  border-radius: 50px;
   margin: 20px auto;
+  transition: 1s ease;
 }
 
 .years-single h1 {
   font-weight: 700;
 }
 
+.years-single nav.list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  justify-content: last baseline;
+}
+
+.years-single nav.list ul {
+  display: flex;
+  flex-direction: column;
+}
+
 .years-single nav.list ul li {
   padding-top: 10px;
   font-size: 20px;
+  transition: all 0.4s ease-in-out;
+}
+
+.years-single nav.list ul li:hover {
+  transform: scale(1.2);
 }
 
 footer {
@@ -253,6 +271,25 @@ footer {
 
   /* header */
 
+  .years-single {
+    width: 90%;
+    text-align: center;
+  }
+
+  .years-single h1 {
+    width: 100%;
+    padding: 0px;
+  }
+
+  .years-single nav.list {
+    justify-content: center;
+  }
+
+  .years-single nav.list ul {
+    width: 100%;
+  }
+  /* main */
+
   .logo-footer {
     width: 100%;
     padding-top: 20px;
@@ -283,12 +320,6 @@ footer {
     margin: auto;
   }
   /* footer */
-}
-
-@media screen and (max-width: 580px) {
-  .years-single {
-    width: 90%;
-  }
 }
 
 @media screen and (max-width: 480px) {

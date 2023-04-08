@@ -50,6 +50,7 @@ const verificInputSignIn = () => {
     passSignIn.style.border = "2px solid #f50303";
   }
 };
+
 //responsavel pela verificação dos inputs do login para saber se eles estão de acordo com os dados enviados pelo usuario
 const verificLogin = () => {
   if (
