@@ -193,6 +193,36 @@ button {
   text-align: center;
 }
 
+.questionsTrue {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.questionsTrue > div {
+  margin-top: 1em;
+  width: 30%;
+  padding: 1em;
+  transition: all 0.9s ease;
+  border-radius: 2em;
+  border: 5px solid var(--color--2);
+}
+
+.questionsTrue > div:hover {
+  transform: scale(1.2);
+}
+ 
+.questionsTrue h1 {
+  font-size: 30px;
+}
+
+.questionsTrue span {
+  font-size: 20px;
+  padding-bottom: 20px;
+  color: rgb(0, 225, 0);
+}
+
 footer {
   width: 100%;
   background-color: var(--color--1);
@@ -353,6 +383,10 @@ footer {
     box-shadow: 4px 10px 10px 1px rgba(0, 0, 0, 0.829);
   }
 
+  .questionsTrue > div {
+    width: 47%;
+  }
+
   /* main */
 
   .logo-footer {
@@ -412,6 +446,10 @@ footer {
     font-size: 25px;
   }
 
+  .list-mobile {
+    left: 20px;
+  }
+
   /* header */
 
   .headerMain {
@@ -438,6 +476,9 @@ footer {
     width: 70%;
   }
 
+  .questionsTrue > div {
+    width: 95%;
+  }
   /* main */
 }
 

@@ -56,9 +56,11 @@ const showCorrectAnswers = () => {
   questionsTrue.innerHTML = ""; // Limpa o conteúdo anterior
 
   questions.forEach((question) => {
-    const p = document.createElement("p");
-    p.textContent = question.question;
-    questionsTrue.appendChild(p);
+    const divAnswers = document.createElement("div")
+
+    const h1 = document.createElement("h1");
+    h1.textContent = `${question.question}`;
+    divAnswers.appendChild(h1);
 
     const correctAnswers = question.answers.filter(
       (answer) => answer.correct === true
@@ -66,7 +68,10 @@ const showCorrectAnswers = () => {
     correctAnswers.forEach((answer) => {
       const span = document.createElement("span");
       span.textContent = `Resposta correta: ${answer.option}`;
-      questionsTrue.appendChild(span);
+      divAnswers.appendChild(span);
+
+      questionsTrue.append(divAnswers)
+      
     });
   });
 };
@@ -77,7 +82,7 @@ const loadQuestion = () => {
   const item = questions[currentIndex];
   answers.innerHTML = "";
   question.innerHTML = item.question;
-  
+
   if (item.img === undefined) { //verificação para saber se a questão tem imagem ou não
     imgQuiz.style.display = "none";
   } else {

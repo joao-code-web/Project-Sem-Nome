@@ -1,6 +1,6 @@
 export default [
     {
-      question: "Quanto é 1 + 2?ksalksalksalksalksaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaawbndiuwbvdfuywbQuanto é 1 + 2?ksalksalksalksalksaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaawbndiuwbvdfuywbdiubnwdjkw djowndjwbdiuyvwduycvwdtQuanto é 1 + 2?ksalksalksalksalksaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaawbndiuwbvdfuywbdiubnwdjkw djowndjwbdiuyvwduycvwdtQuanto é 1 + 2?ksalksalksalksalksaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaawbndiuwbvdfuywbdiubnwdjkw djowndjwbdiuyvwduycvwdtQuanto é 1 + 2?ksalksalksalksalksaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaawbndiuwbvdfuywbdiubnwdjkw djowndjwbdiuyvwduycvwdtdiubnwdjkw djowndjwbdiuyvwduycvwdtuyb",
+      question: "Quanto é 1 + 2?",
       img: `<img src="../img/usersImg/homen3.png" alt="">`,
       answers: [
         { option: "3d3dt", correct: true },

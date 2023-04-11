@@ -17,10 +17,10 @@ body {
 
 :root {
   --color--1: #134074;
-  --color--2: #13315C;
-  --color--3: #0B2545;
-  --color--4: #8DA9C4;
-  --color--5: #EEF4ED;
+  --color--2: #13315c;
+  --color--3: #0b2545;
+  --color--4: #8da9c4;
+  --color--5: #eef4ed;
 }
 
 .cont {
@@ -81,6 +81,7 @@ header {
   width: 100%;
   transition: 1s;
 }
+
 nav.desktop {
   width: 100%;
   background-color: var(--color--1);
@@ -122,6 +123,7 @@ main.cont {
   margin: 3em auto;
   color: white;
   border-radius: 50px;
+  transition: all 1s;
 }
 
 .quiz {
@@ -133,7 +135,7 @@ main.cont {
 
 .spnQtd {
   text-align: end;
-  font-size: 20px;
+  font-size: 25px;
 }
 
 .imgQuiz {
@@ -189,6 +191,23 @@ button {
 
 .finish button {
   text-align: center;
+}
+
+.questionsTrue {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.questionsTrue h1 {
+  font-size: 30px;
+}
+
+.questionsTrue span {
+  font-size: 20px;
+  padding-bottom: 20px;
+  color: rgb(0, 225, 0);
 }
 
 footer {
@@ -308,7 +327,7 @@ footer {
     display: none;
   }
 
-  .logo img  {
+  .logo img {
     top: 0px;
     margin: 0px 20px;
   }

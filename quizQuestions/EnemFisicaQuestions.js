@@ -1,6 +1,26 @@
 export default [
   {
-    question: "Quanto é 1 + 2",
+    question: "Quanto é 1 + 2?",
+    img: `<img src="../img/usersImg/homen1.png" alt="">`,
+    answers: [
+      { option: "3", correct: true },
+      { option: "2", correct: false },
+      { option: "4", correct: false },
+      { option: "9", correct: false },
+    ],
+  },
+  {
+    question: "Quanto é 1 + 2?",
+    img: `<img src="../img/usersImg/homen1.png" alt="">`,
+    answers: [
+      { option: "3", correct: true },
+      { option: "2", correct: false },
+      { option: "4", correct: false },
+      { option: "9", correct: false },
+    ],
+  },
+  {
+    question: "Quanto é 1 + 2?",
     img: `<img src="../img/usersImg/homen1.png" alt="">`,
     answers: [
       { option: "3", correct: true },
@@ -26,6 +46,42 @@ export default [
       { option: "90", correct: false },
       { option: "10", correct: false },
       { option: "80", correct: true },
+    ],
+  },
+  {
+    question: "Quanto é 7 x 7?",
+    answers: [
+      { option: "70", correct: false },
+      { option: "170", correct: false },
+      { option: "56", correct: false },
+      { option: "49", correct: true },
+    ],
+  },
+  {
+    question: "Quanto é 7 x 7?",
+    answers: [
+      { option: "70", correct: false },
+      { option: "170", correct: false },
+      { option: "56", correct: false },
+      { option: "49", correct: true },
+    ],
+  },
+  {
+    question: "Quanto é 7 x 7?",
+    answers: [
+      { option: "70", correct: false },
+      { option: "170", correct: false },
+      { option: "56", correct: false },
+      { option: "49", correct: true },
+    ],
+  },
+  {
+    question: "Quanto é 7 x 7?",
+    answers: [
+      { option: "70", correct: false },
+      { option: "170", correct: false },
+      { option: "56", correct: false },
+      { option: "49", correct: true },
     ],
   },
   {
