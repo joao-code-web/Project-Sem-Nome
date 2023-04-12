@@ -57,8 +57,7 @@ header {
 }
 
 .logo {
-  width: 200px;
-  height: 100px;
+  width: 100px;
   color: white;
   margin: auto;
   text-align: center;
@@ -331,7 +330,7 @@ footer {
 @media screen and (max-width: 800px) {
   .list-mobile {
     top: 50px;
-    left: 120px;
+    left: 50px;
     display: block;
   }
 
@@ -342,7 +341,7 @@ footer {
 
   .logo img  {
     top: 0px;
-    margin: 0px 20px;
+    margin: 0px;
   }
 
   /* header */
@@ -422,6 +421,12 @@ footer {
 }
 
 @media screen and (max-width: 480px) {
+  .list-mobile {
+    top: 50px;
+    left: 0px;
+    display: block;
+  }
+
   nav.desktop {
     width: 100%;
     background-color: var(--color--1);

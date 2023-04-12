@@ -17,10 +17,10 @@ body {
 
 :root {
   --color--1: #134074;
-  --color--2: #13315C;
-  --color--3: #0B2545;
-  --color--4: #8DA9C4;
-  --color--5: #EEF4ED;
+  --color--2: #13315c;
+  --color--3: #0b2545;
+  --color--4: #8da9c4;
+  --color--5: #eef4ed;
 }
 
 .cont {
@@ -57,8 +57,7 @@ header {
 }
 
 .logo {
-  width: 200px;
-  height: 100px;
+  width: 100px;
   color: white;
   margin: auto;
   text-align: center;
@@ -291,7 +290,7 @@ footer {
 @media screen and (max-width: 800px) {
   .list-mobile {
     top: 50px;
-    left: 120px;
+    left: 50px;
     display: block;
   }
 
@@ -300,9 +299,9 @@ footer {
     display: none;
   }
 
-  .logo img  {
+  .logo img {
     top: 0px;
-    margin: 0px 20px;
+    margin: 0px;
   }
 
   /* header */
@@ -354,6 +353,12 @@ footer {
 }
 
 @media screen and (max-width: 480px) {
+  .list-mobile {
+    top: 50px;
+    left: 0px;
+    display: block;
+  }
+
   nav.desktop {
     width: 100%;
     background-color: var(--color--1);
@@ -361,14 +366,14 @@ footer {
     text-align: center;
     border-radius: 0px 0px 50px 50px;
   }
-  
+
   nav.desktop ul {
     list-style-type: none;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
   }
-  
+
   nav.desktop ul li {
     width: 100%;
     padding: 1em;
