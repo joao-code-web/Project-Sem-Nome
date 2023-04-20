@@ -14,14 +14,3 @@ const menuFunction = () => {
 buttonI.addEventListener("click", () => {
   menuFunction();
 });
-
-function animateImage() {
-  container.style.transform = "translateY(-60%)";
-}
-
-function resetAnimation() {
-  container.style.transform = "translateY(0)";
-}
-
-container.addEventListener("mouseenter", animateImage);
-container.addEventListener("mouseleave", resetAnimation);

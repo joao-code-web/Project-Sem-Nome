@@ -57,7 +57,7 @@ const showCorrectAnswers = () => {
 
   questions.forEach((question) => {
     const divAnswers = document.createElement("div")
-
+ 
     const h1 = document.createElement("h1");
     h1.textContent = `${question.question}`;
     divAnswers.appendChild(h1);

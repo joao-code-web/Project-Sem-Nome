@@ -15,9 +15,11 @@ const buttonSingUp = document.querySelector("button#flipFront");
 const buttonLogin = document.querySelector("button#loginUser");
 const buttonLink = document.querySelector(".card .front form a");
 // // vars
-var currentSlide = 1;
-const isValueNameUp = nameSignUp.value.trim() === "";
-const isValuePassUp = passSignUp.value.trim() === "";
+let currentSlide = 1;
+let isValueNameUp = nameSignUp.value.trim() === "";
+let isValuePassUp = passSignUp.value.trim() === "";
+let isValueNameIn = nameSignIn.value.trim() === "";
+let isValuePassIn = passSignIn.value.trim() === "";
 // // functions
 //responsavel pela verificação dos inputs do cadastro para saber se eles estão com alguma coisa escrita
 const verificInputSignUp = () => {
@@ -43,10 +45,10 @@ const flipSignIn = () => {
 };
 //responsavel pela verificação dos inputs do login para saber se eles estão com alguma coisa escrita
 const verificInputSignIn = () => {
-  if (nameSignIn.value.trim() === "") {
+  if (isValueNameIn) {
     nameSignIn.style.border = "2px solid #f50303";
   }
-  if (passSignIn.value.trim() === "") {
+  if (isValuePassIn) {
     passSignIn.style.border = "2px solid #f50303";
   }
 };
@@ -97,6 +99,7 @@ const prevSlide = () => {
     slideBoxWoman.innerHTML = `<img src="./img/usersImg/mulher${currentSlide}.png" alt="person picture">`;
   }
 };
+
 //responsavel por a foto no login e guarda a foto quando o usuario escolher
 bols.forEach((e) => {
   e.addEventListener("click", () => {

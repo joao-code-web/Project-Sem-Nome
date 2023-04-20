@@ -12,9 +12,9 @@
 }
 
 body {
-    background: linear-gradient(-45deg, var(--color--1), var(--color--2), var(--color--4), var(--color--3));
+    background: linear-gradient(-50deg, var(--color--1), var(--color--2), var(--color--4), var(--color--3));
     background-size: 200% 200%;
-    animation: gradient 10s ease infinite;
+    animation: gradient 10s ease-in-out infinite;
     height: 100vh;
     perspective: 2000px;
 }
@@ -23,8 +23,8 @@ body {
     width: 380px;
     height: 510px;
     position: relative;
+    top: 150px;
     margin: auto;
-    top: 200px;
     border-radius: 10px;
     font-family: tahoma;
     transform-style: preserve-3d;
@@ -207,6 +207,21 @@ body {
     font-size: 15px;
 }
 
+@media screen and (max-width: 340px) {
+    .card {
+        width: 100%;
+    }
+
+    .card .f1 {
+        width: 100px;
+    }
+    body {
+        background: linear-gradient(-45deg, var(--color--4), var(--color--3));
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+}
+
 @keyframes gradient {
     0% {
         background-position: 0% 50%;
@@ -218,39 +233,5 @@ body {
 
     100% {
         background-position: 0% 50%;
-    }
-}
-
-@media screen and (max-width: 390px) {
-    .card {
-        width: 100%;
-        padding: 2em;
-    }
-
-    .card form input {
-        width: 30%;
-    }
-
-    .bols {
-        width: 100%;
-        display: flex;
-        overflow: hidden;
-        flex-wrap: nowrap;
-    }
-    
-    .bols i {
-        font-size: 30px;
-        cursor: pointer;
-    }
-    
-    .bol-single {
-        width: 100%;
-        border-radius: 0px;
-    }
-    
-    .bol-single img {
-        width: 100%;
-        object-fit: scale-down;
-        border-radius: 0px;
     }
 }
