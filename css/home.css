@@ -185,14 +185,15 @@ nav.desktop ul li a:hover {
 }
 
 .materias-single {
-  width: 21%;
+  width: 200px;
   height: auto;
-  padding: 20px;
+  padding: 2em;
   background-color: var(--color--1);
   margin: 1.3em 5px;
   border-radius: 70px;
   box-shadow: 4px 10px 10px 1px rgba(0, 0, 0, 0.829);
   transition: all 0.5s ease-in-out;
+  color: white;
 }
 
 .materias-single:hover {
@@ -352,17 +353,6 @@ footer {
     text-align: center;
     flex-wrap: wrap;
   }
-
-  .materias-single {
-    width: 25%;
-    height: auto;
-    padding: 20px;
-    background-color: var(--color--1);
-    margin: 10px;
-    border-radius: 30px;
-    box-shadow: 4px 10px 10px 1px rgba(0, 0, 0, 0.829);
-  }
-
   /* main */
 
   .logo-footer {
@@ -483,14 +473,9 @@ footer {
   }
 
   .materias-single {
-    width: 70%;
-    height: 100px;
-    padding: 30px 0px;
-    background-color: var(--color--1);
-    margin: 20px auto;
-    border-radius: 30px;
-    box-shadow: 4px 10px 10px 1px rgba(0, 0, 0, 0.829);
+    width: 100%;
   }
 
   /* ma */
 }
+

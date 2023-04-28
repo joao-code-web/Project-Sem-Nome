@@ -116,7 +116,7 @@ nav.desktop ul li a:hover {
 
 .prof-wraper {
   width: 100%;
-  margin: auto;
+  margin: 4em auto;
   display: flex;
   flex-direction: column;
 }
@@ -136,7 +136,7 @@ nav.desktop ul li a:hover {
   border: 100%;
   transition: 1s;
   border-radius: 100%;
-  margin: auto;
+  margin: 2em auto;
 }
 
 .prof-single img {

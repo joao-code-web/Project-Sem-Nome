@@ -163,18 +163,21 @@ section.exerRapidos .cont {
 .quiz-wraper {
   display: flex;
   width: 100%;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   flex-wrap: wrap;
 }
 
 .quiz-exer {
-  width: 32%;
-  margin-bottom: 15px;
+  width: 350px;
+  height: 200px;
+  margin: 10px;
   padding: 10px;
   background-color: var(--color--3);
   border-radius: 15px;
   transition: all 0.5s ease;
+  display: flex;
+  flex-direction: column;
 }
 
 .quiz-exer:hover {
@@ -184,6 +187,7 @@ section.exerRapidos .cont {
 .tittle-quiz {
   padding: 10px;
   color: white;
+  text-align: left;
 }
 
 .tittle-quiz h1 {
@@ -324,7 +328,7 @@ footer {
   /* header */
 
   .quiz-exer {
-    width: 45%;
+    width: 350px;
     margin: 0.5em;
   }
 
@@ -396,9 +400,20 @@ footer {
   /* header */
 
   .quiz-exer {
-    width: 90%;
+    width: 350px;
+    height: 250px;
     margin: 1em auto;
   }
+
+  .description-quiz {
+    margin-top: 20px;
+    width: 95%;
+    border-radius: 10px;
+    padding: 5px;
+    margin: auto;
+    background-color: white;
+  }
+  
 
   /* main */
 }
