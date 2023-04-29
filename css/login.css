@@ -161,7 +161,6 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
     overflow: hidden;
 }
 
@@ -218,8 +217,26 @@ body {
     }
 
     .card .f1 {
-        width: 100px;
+        width: 70%;
     }
+
+    .bols {
+        width: 100%;
+    }
+
+    .bol-single {
+        width: 50%;
+    }
+    
+    .bol-single img {
+        width: 100%;
+        object-fit: scale-down;
+    }
+
+    button#flipFront {
+        padding: 10px;
+    }
+
     body {
         background: linear-gradient(-45deg, var(--color--4), var(--color--3));
         background-position: center;
