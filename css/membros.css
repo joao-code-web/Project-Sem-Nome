@@ -4,8 +4,10 @@
   list-style: none;
   text-decoration: none;
   box-sizing: border-box;
+  font-family: "Barlow", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  font-family: "Ysabeau", sans-serif;
 }
-
 html,
 body {
   height: 100%;
@@ -106,6 +108,7 @@ nav.desktop ul li {
 }
 
 nav.desktop ul li a {
+  font-size: 1.3em;
   color: white;
   text-decoration: none;
 }
@@ -206,15 +209,17 @@ footer {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
+  align-items: center;
 }
 
-.icons-materias-footer i {
-  padding: 0.9em;
-  font-size: 30px;
+.icons-materias-footer svg {
+  width: 5em;
+  height: 5em;
+  margin: 10px;
 }
 
-.icons-materias-footer i:hover {
+.icons-materias-footer svg:hover {
   background-color: var(--color--3);
 }
 
@@ -250,6 +255,7 @@ footer {
 
 .footer-singleExe ul li a {
   color: white;
+  font-size: 1.4em;
 }
 .footer-singleExe ul li a:hover {
   border-bottom: 1px solid black;
@@ -284,6 +290,7 @@ footer {
   margin-left: 0.5em;
   cursor: pointer;
 }
+
 /* footer */
 
 @media screen and (max-width: 800px) {

@@ -168,16 +168,31 @@ footer {
 
 .logo-footer {
   width: 30%;
-  padding-top: 20px;
+  padding: 1em;
+  text-align: center;
 }
 
 .logo-img-footer {
   width: 100%;
 }
 
-.logo-footer p {
-  padding-top: 20px;
-  line-height: 25px;
+.icons-materias-footer {
+  margin-top: 2em;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.icons-materias-footer svg {
+  width: 5em;
+  height: 5em;
+  margin: 10px;
+}
+
+.icons-materias-footer svg:hover {
+  background-color: var(--color--3);
 }
 
 .footer-singleExe {
@@ -212,6 +227,7 @@ footer {
 
 .footer-singleExe ul li a {
   color: white;
+  font-size: 1.4em;
 }
 .footer-singleExe ul li a:hover {
   border-bottom: 1px solid black;

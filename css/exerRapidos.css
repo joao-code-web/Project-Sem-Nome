@@ -4,6 +4,9 @@
   list-style: none;
   text-decoration: none;
   box-sizing: border-box;
+  font-family: "Barlow", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  font-family: "Ysabeau", sans-serif;
 }
 
 html,
@@ -17,10 +20,10 @@ body {
 
 :root {
   --color--1: #134074;
-  --color--2: #13315C;
-  --color--3: #0B2545;
-  --color--4: #8DA9C4;
-  --color--5: #EEF4ED;
+  --color--2: #13315c;
+  --color--3: #0b2545;
+  --color--4: #8da9c4;
+  --color--5: #eef4ed;
 }
 
 .cont {
@@ -106,6 +109,7 @@ nav.desktop ul li {
 }
 
 nav.desktop ul li a {
+  font-size: 1.3em;
   color: white;
   text-decoration: none;
 }
@@ -143,21 +147,25 @@ section.exerRapidos .cont {
 
 .search-quiz input {
   width: 100%;
-  padding: 1.5em;
+  height: 100%;
+  padding: 0.7em;
   border-radius: 25px;
   border: 0px;
   outline: none;
   background-color: rgb(147, 147, 255);
+  font-size: 1.5em;
+  cursor: pointer;
 }
 
 .search-quiz i {
   width: 60px;
-  padding: 1.25em;
+  padding: 1.59em 0px;
   border-radius: 0px 40px 40px 0px;
   background-color: rgb(180, 180, 227);
   position: absolute;
-  right: 0px;
+  right: 4px;
   bottom: 10px;
+  cursor: pointer;
 }
 
 .quiz-wraper {
@@ -170,14 +178,15 @@ section.exerRapidos .cont {
 
 .quiz-exer {
   width: 350px;
-  height: 200px;
+  height: 220px;
   margin: 10px;
-  padding: 10px;
+  padding: 10px 1em;
   background-color: var(--color--3);
   border-radius: 15px;
   transition: all 0.5s ease;
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 
 .quiz-exer:hover {
@@ -185,7 +194,6 @@ section.exerRapidos .cont {
 }
 
 .tittle-quiz {
-  padding: 10px;
   color: white;
   text-align: left;
 }
@@ -195,11 +203,15 @@ section.exerRapidos .cont {
 }
 
 .description-quiz {
-  width: 95%;
+  width: 90%;
   border-radius: 10px;
   padding: 5px;
   margin: auto;
   background-color: white;
+  position: absolute;
+  top: 67%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 /* main */
@@ -228,15 +240,17 @@ footer {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
+  align-items: center;
 }
 
-.icons-materias-footer i {
-  padding: 0.9em;
-  font-size: 30px;
+.icons-materias-footer svg {
+  width: 5em;
+  height: 5em;
+  margin: 10px;
 }
 
-.icons-materias-footer i:hover {
+.icons-materias-footer svg:hover {
   background-color: var(--color--3);
 }
 
@@ -272,6 +286,7 @@ footer {
 
 .footer-singleExe ul li a {
   color: white;
+  font-size: 1.4em;
 }
 .footer-singleExe ul li a:hover {
   border-bottom: 1px solid black;
@@ -321,7 +336,7 @@ footer {
     display: none;
   }
 
-  .logo img  {
+  .logo img {
     top: 0px;
     margin: 0px;
   }
@@ -367,7 +382,6 @@ footer {
 }
 
 @media screen and (max-width: 480px) {
-
   .list-mobile {
     top: 50px;
     left: 0px;
@@ -381,14 +395,14 @@ footer {
     text-align: center;
     border-radius: 0px 0px 50px 50px;
   }
-  
+
   nav.desktop ul {
     list-style-type: none;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
   }
-  
+
   nav.desktop ul li {
     width: 100%;
     padding: 1em;
@@ -398,6 +412,10 @@ footer {
     font-size: 25px;
   }
   /* header */
+
+  .search-quiz {
+    width: 100%;
+  }
 
   .quiz-exer {
     width: 350px;
@@ -413,7 +431,6 @@ footer {
     margin: auto;
     background-color: white;
   }
-  
 
   /* main */
 }
