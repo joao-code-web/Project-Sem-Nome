@@ -124,12 +124,15 @@ nav.desktop ul li a:hover {
   flex-direction: column;
 }
 
+.prof-wraper > h1#tittle-profs {
+  font-size: 4em;
+}
+
 .materia-prof {
   width: 100%;
   display: flex;
-  margin: auto;
+  margin: 2em auto;
   flex-wrap: wrap;
-  justify-content: space-around;
 }
 
 .prof-single {
@@ -139,7 +142,7 @@ nav.desktop ul li a:hover {
   border: 100%;
   transition: 1s;
   border-radius: 100%;
-  margin: 2em auto;
+  margin-bottom: 4em;
 }
 
 .prof-single img {
@@ -149,12 +152,13 @@ nav.desktop ul li a:hover {
 }
 
 .prof-single h1 {
+  width: 100%;
   position: absolute;
-  top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translateX(-50%);
   opacity: 0;
   transition: 0.5s;
+  text-align: center;
 }
 
 footer {
@@ -367,5 +371,6 @@ footer {
 
   .prof-single {
     width: 90%;
+    margin: 4em auto;
   }
 }

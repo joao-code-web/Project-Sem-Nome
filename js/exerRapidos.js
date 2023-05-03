@@ -1,5 +1,6 @@
 const exerSped = document.querySelectorAll(".quiz-exer");
 const input = document.querySelector(".search-quiz input");
+const errorMensage = document.querySelector('.error')
 
 const filterQuiz = (searchQuiz) => {
   searchQuiz = searchQuiz.toLowerCase();
@@ -22,10 +23,10 @@ const filterQuiz = (searchQuiz) => {
     }
   });
 
-  if (foundQuiz) {
-    console.log("encontrou");
+  if (!foundQuiz) {
+    errorMensage.style.display = 'block'
   } else {
-    console.log("não encontrou");
+    errorMensage.style.display = 'none'
   }
 };
 

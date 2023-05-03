@@ -2,6 +2,7 @@ const helloUserTitle = document.querySelector("h1#helloName");
 const addPhoto = document.querySelector(".photo-user");
 const materiaItems = document.querySelectorAll(".materias-single");
 const searchInput = document.querySelector("input#procurar");
+const errorMensage = document.querySelector(".error");
 
 // Funções de Utilidade
 const getLocalStorageItem = (key) => {
@@ -21,23 +22,37 @@ const verificAutoPhoto = () => {
   }
 };
 // Filtragem de materias
-const filterItems = (searchItem) => {
-  searchItem = searchItem.toLowerCase();
+const filterQuiz = (searchQuiz) => {
+  searchQuiz = searchQuiz.toLowerCase();
+  let foundQuiz = false;
 
-  materiaItems.forEach((item) => {
-    let title = item.querySelector("h1").textContent.toLowerCase();
+  materiaItems.forEach((quiz) => {
+    let tittle = quiz.querySelector("h1").textContent.toLowerCase();
+    let shouldDisplay = tittle.includes(searchQuiz);
 
-    if (title.indexOf(searchItem) !== -1) {
-      item.style.display = "block";
+    quiz.classList.toggle("hidden", !shouldDisplay);
+
+    if (shouldDisplay) {
+      foundQuiz = true;
+    }
+
+    if (tittle.indexOf(searchQuiz) !== -1) {
+      quiz.style.display = "block";
     } else {
-      item.style.display = "none";
+      quiz.style.display = "none";
     }
   });
+
+  if (!foundQuiz) {
+    errorMensage.style.display = "block";
+  } else {
+    errorMensage.style.display = "none";
+  }
 };
 
 searchInput.addEventListener("input", function () {
   const searchItem = this.value;
-  filterItems(searchItem);
+  filterQuiz(searchItem);
 });
 
 helloUser();
